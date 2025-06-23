@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Загрузка файлов</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Поделиться файлом</h1>
+      <p>Загрузите файл и получите временную ссылку для скачивания.</p>
+
+      <form id="uploadForm">
+        <input type="file" id="fileInput" required />
+        <button type="submit">Загрузить</button>
+      </form>
+
+      <div id="uploadStatus" class="hidden">
+        <p id="statusText">Загрузка...</p>
+        <div class="progress-bar-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div id="result" class="hidden">
+        <p>Ваша ссылка готова:</p>
+        <input type="text" id="downloadLink" readonly />
+        <button id="copyButton">Копировать</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
