@@ -7,3 +7,4 @@
 3. cd /путь/к/вашему/проекту/files-server-app
 4. mvn clean install
 5. java -jar target/FilesExchangeApp-1.0-SNAPSHOT.jar
+6. Открыть в бразуере index.html по пути /frontend/index.html
